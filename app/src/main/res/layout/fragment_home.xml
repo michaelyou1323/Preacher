@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="300sp"
+        android:layout_height="200sp"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
+        android:padding="5sp"
+        app:cardElevation="25dp"
+
+        >
+
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_height="200sp"
+            android:scaleX="2.5"
+            android:src="@drawable/mr_baby_4077">
+
+        </ImageView>
+    </com.google.android.material.card.MaterialCardView>
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="159dp"
+        android:layout_height="61dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#F26467"
+        android:fontFamily="cursive"
+        android:text="تابعني"
+        android:textColor="#F8FAFC"
+        android:textSize="60px"
+        android:textStyle="bold"
+        cornerRadius="10dp"
+        >
+
+    </com.google.android.material.button.MaterialButton>
+
+</FrameLayout>

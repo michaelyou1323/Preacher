@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SplashMenu.SplashActivity"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20ssp"
+            app:srcCompat="@drawable/photo_1674291743828">
+
+        </ImageView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="وَقَالَ لَهُمُ:«اذْهَبُوا إِلَى الْعَالَمِ أَجْمَعَ وَاكْرِزُوا بِالإِنْجِيلِ لِلْخَلِيقَةِ كُلِّهَا.
+"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_marginTop="@dimen/_5ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(مرقس ١٦: ١٥) "
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#A13737"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
