@@ -4,42 +4,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragments.HomeFragment">
+    tools:context=".Recyclerview.HomeFragment"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+
+
+    >
+
+
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="300sp"
-        android:layout_height="200sp"
+
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_180sdp"
         app:cardCornerRadius="20dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="80dp"
-        android:padding="5sp"
-        app:cardElevation="25dp"
+        app:contentPadding="@dimen/_1sdp"
+        android:padding="@dimen/_5ssp"
+        app:cardElevation="@dimen/_5sdp"
+        app:strokeWidth="@dimen/_2sdp"
+        app:strokeColor="#918B8B"
 
         >
 
+
         <ImageView
-            android:layout_width="300sp"
-            android:layout_height="200sp"
-            android:scaleX="2.5"
-            android:src="@drawable/mr_baby_4077">
+            android:id="@+id/homeImage"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/photoroom_20230516_142426"
+
+
+            >
 
         </ImageView>
     </com.google.android.material.card.MaterialCardView>
-    <!-- TODO: Update blank fragment layout -->
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="159dp"
-        android:layout_height="61dp"
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_45sdp"
+        android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="#F26467"
-        android:fontFamily="cursive"
+        android:gravity="center"
+
+    >
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/MoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:text="المزيد"
+        android:textAllCaps="false"
+        android:textColor="#146CD7"
+        android:textSize="@dimen/_11sdp"
+        app:cornerRadius="@dimen/_5sdp"
+        app:strokeColor="#146CD7"
+        app:strokeWidth="@dimen/_1sdp"
+
+
+        >
+
+
+    </com.google.android.material.button.MaterialButton>
+</LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif"
         android:text="تابعني"
-        android:textColor="#F8FAFC"
+        android:textColor="#F26467"
         android:textSize="60px"
         android:textStyle="bold"
-        cornerRadius="10dp"
+        app:cornerRadius="@dimen/_10sdp"
+        app:strokeColor="#F26467"
+        app:strokeWidth="@dimen/_1sdp"
+        android:textAllCaps="false"
+
         >
 
     </com.google.android.material.button.MaterialButton>
+
+
+</LinearLayout>
 
 </FrameLayout>

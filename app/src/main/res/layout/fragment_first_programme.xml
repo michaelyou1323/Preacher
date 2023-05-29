@@ -3,22 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginRight="@dimen/_10ssp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Fragments.FirstProgrammeFragment">
+    tools:context=".Fragments.FirstProgrammeFragment"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    >
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvFProgramme"
-            android:layout_width="match_parent"
+            android:id="@+id/userList"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="2"
-            tools:listitem="@layout/item_news"
-            android:visibility="visible"
-
-            >
+            tools:listitem="@layout/main_item">
 
 
         </androidx.recyclerview.widget.RecyclerView>

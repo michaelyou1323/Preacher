@@ -1,5 +1,22 @@
 <resources>
-    <string name="app_name">Preacher</string>
+    <string name="app_name">preacher</string>
+
+    <string name="عن_الخدمة">About</string>
+    <string name="events">Events</string>
+    <string name="Gospel">Gospel preaching</string>
+    <string name="Contact_us">Contact us</string>
+    <string name="call_me">Call me</string>
+    <string name="your_information">You Information</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="email_optional">Email (optional)</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="church">Church</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
 </resources>

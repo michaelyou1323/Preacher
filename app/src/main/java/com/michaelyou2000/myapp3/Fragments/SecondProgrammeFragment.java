@@ -1,66 +1,112 @@
 package com.michaelyou2000.myapp3.Fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.michaelyou2000.myapp3.New.MyAdapter;
+import com.michaelyou2000.myapp3.New.User;
 import com.michaelyou2000.myapp3.R;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link SecondProgrammeFragment#newInstance} factory method to
+ * Use the {@link SecondProgrammeFragment#} factory method to
  * create an instance of this fragment.
  */
 public class SecondProgrammeFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    RecyclerView recyclerView;
+    DatabaseReference database;
+    MyAdapter myAdapter;
+    ArrayList<User> users;
+    private ArrayList<User> newsArrayList;
+    private RecyclerView recyclerview;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
-    public SecondProgrammeFragment() {
-        // Required empty public constructor
+
+    public SecondProgrammeFragment(){
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment SecondProgrammeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static SecondProgrammeFragment newInstance(String param1, String param2) {
-        SecondProgrammeFragment fragment = new SecondProgrammeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+    }
+
+
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_second_programme, container, false);
+
+
+
+
+        recyclerView = view.findViewById(R.id.userList2);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new GridLayoutManager(requireContext(),2));
+
+        database = FirebaseDatabase.getInstance().getReference("NewPage");
+
+        users = new ArrayList<>();
+        myAdapter = new MyAdapter(requireContext(),users);
+        myAdapter.setUsersList(users);
+        database.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    User user = dataSnapshot.getValue(User.class);
+                    users.add(user);
+                }
+
+                myAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+
+        });
+
+
+        myAdapter = new MyAdapter(getActivity(), users);
+        recyclerView.setAdapter(myAdapter);
+        return view;
+
+
+
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second_programme, container, false);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+
+
     }
+
+
 }

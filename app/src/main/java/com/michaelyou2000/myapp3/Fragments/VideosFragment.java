@@ -1,22 +1,18 @@
 package com.michaelyou2000.myapp3.Fragments;
 
-import android.content.Context;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-
-import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.michaelyou2000.myapp3.R;
 
@@ -27,7 +23,8 @@ public class VideosFragment extends Fragment implements AdapterView.OnItemSelect
 
 
 
-    String[] country = {"India", "USA", "China", "Japan", "Other"};
+
+
 
     public VideosFragment() {
     }
@@ -56,6 +53,8 @@ public class VideosFragment extends Fragment implements AdapterView.OnItemSelect
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_videos, container, false);
+
+
     }
 
 
@@ -63,6 +62,7 @@ public class VideosFragment extends Fragment implements AdapterView.OnItemSelect
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
 
         Spinner spin = (Spinner) view.findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
@@ -82,18 +82,51 @@ public class VideosFragment extends Fragment implements AdapterView.OnItemSelect
                         .beginTransaction()
                         .replace(R.id.VFramelayout, new FirstProgrammeFragment())
                         .commit();
+
                 break;
             case 1:
                 getChildFragmentManager()
                         .beginTransaction()
                         .replace(R.id.VFramelayout, new SecondProgrammeFragment())
                         .commit();
+                Toast.makeText(getActivity(), "Second Programme selected",
+                        Toast.LENGTH_LONG).show();
                 break;
             case 2:
                 getChildFragmentManager()
                         .beginTransaction()
                         .replace(R.id.VFramelayout, new ThirdProgrammeFragment())
                         .commit();
+                Toast.makeText(getActivity(), "Third Programme selected",
+                        Toast.LENGTH_LONG).show();
+                break;
+
+                // To be edited
+            case 3:
+                getChildFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.VFramelayout, new FourthProgrammeFragment())
+                        .commit();
+                Toast.makeText(getActivity(), "Fourth Programme selected",
+                        Toast.LENGTH_LONG).show();
+
+                break;
+            case 4:
+                getChildFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.VFramelayout, new FifthProgrammeFragment())
+                        .commit();
+                Toast.makeText(getActivity(), "Fifth Programme selected",
+                        Toast.LENGTH_LONG).show();
+                break;
+
+            case 5:
+                getChildFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.VFramelayout, new SixthProgrammeFragment())
+                        .commit();
+                Toast.makeText(getActivity(), "Fifth Programme selected",
+                        Toast.LENGTH_LONG).show();
                 break;
 
         }
@@ -104,6 +137,9 @@ public class VideosFragment extends Fragment implements AdapterView.OnItemSelect
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+
+        Toast.makeText(getActivity(),"Please chose one ",
+                Toast.LENGTH_LONG).show();
     }
 }
 

@@ -17,45 +17,74 @@
     tools:context=".Fragments.VideosFragment"
     android:orientation="vertical"
 
-
     >
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-      >
+        android:layout_height="@dimen/_70sdp"
+        android:orientation="horizontal">
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="8dp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
             android:animateLayoutChanges="true"
             android:outlineProvider="background"
             android:padding="5sp"
             app:cardBackgroundColor="@color/white"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
-            tools:targetApi="o">
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_4sdp"
+            tools:targetApi="o"
+            app:strokeWidth="@dimen/_1sdp"
+            app:strokeColor="#146CD7"
+
+            >
+
+
 
             <Spinner
 
+                android:animateLayoutChanges="true"
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-
+                android:layout_height="@dimen/_36sdp"
                 android:drawSelectorOnTop="true"
-
-                android:dropDownSelector="#7F1414"
-
+                android:dropDownSelector="#BD2626"
                 android:entries="@array/spinnerItems"
                 android:outlineProvider="paddedBounds"
+                android:spinnerMode="dialog"
+                android:textDirection="anyRtl"
 
-                android:spinnerMode="dropdown" />
+
+                />
+
+
         </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
 
     </LinearLayout>
 
@@ -65,7 +94,7 @@
         android:id="@+id/VFramelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="89dp"
+        android:layout_marginTop="@dimen/_69sdp"
 
 
        >

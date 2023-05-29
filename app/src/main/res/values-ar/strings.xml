@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="true">الكارز</string>
+    <string name="عن_الخدمة">عن الخدمة</string>
+    <string name="events">لقاءات</string>
+    <string name="Gospel">الكرازة بالأنجيل</string>
+    <string name="Contact_us">تواصل معنا</string>
+    <string name="call_me">تابعني</string>
+    <string name="your_information">بياناتك</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="city">المدينة</string>
+    <string name="region">منطقة/مركز/قرية</string>
+    <string name="email_optional">البريد الألكتروني(اختياري)</string>
+    <string name="last_name">الاسم الثاني</string>
+    <string name="country">الدولة</string>
+    <string name="church">Church</string>
+
+</resources>

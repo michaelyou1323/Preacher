@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MoreFragment"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+
+
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCard1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            android:layout_gravity="center"
+
+          android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:focusable="true"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="عن الخدمة"
+                    android:textColor="#146CD7"
+                    android:textSize="@dimen/_19ssp"
+
+                    android:fontFamily="sans-serif"
+
+                    >
+
+                </TextView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    app:strokeColor="#838383"
+                    app:strokeWidth="@dimen/_2sdp"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/outline_info_24"
+
+
+                        >
+
+
+                    </ImageView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCard2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            android:layout_gravity="center"
+
+            android:clickable="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+
+
+            android:focusable="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="end"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="أحداث"
+                    android:textColor="#146CD7"
+                    android:textSize="@dimen/_19ssp"
+                    android:fontFamily="sans-serif"
+
+                    >
+
+                </TextView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    app:strokeColor="#838383"
+                    app:strokeWidth="@dimen/_2sdp"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_event_24"
+
+
+                        >
+
+
+                    </ImageView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCard3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            android:layout_gravity="center"
+
+            android:clickable="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+
+            android:focusable="true"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:gravity="end"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="الكرازة بالأنجيل"
+                    android:textColor="#146CD7"
+                    android:textSize="@dimen/_19ssp"
+
+                    android:fontFamily="sans-serif"
+
+                    >
+
+                </TextView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    app:strokeColor="#838383"
+                    app:strokeWidth="@dimen/_2sdp"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_outline_menu_book_24"
+
+
+                        >
+
+
+                    </ImageView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/MCard4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp"
+            android:layout_gravity="center"
+
+            android:clickable="true"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:focusable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape"
+                android:gravity="end"
+                android:layout_marginRight="@dimen/_5sdp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="تواصل معنا"
+                    android:textColor="#146CD7"
+                    android:textSize="@dimen/_19ssp"
+
+                    android:fontFamily="sans-serif"
+
+                    >
+
+                </TextView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="@dimen/_50sdp"
+                    app:strokeColor="#838383"
+                    app:strokeWidth="@dimen/_2sdp"
+
+                    >
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_outline_contactless_24"
+
+
+                        >
+
+
+                    </ImageView>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</FrameLayout>

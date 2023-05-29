@@ -6,37 +6,71 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".SplashMenu.SplashActivity"
-    android:layout_gravity="center">
+    android:layout_gravity="center"
+    android:background="#146CD7"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_220sdp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/_4sdp"
+            android:backgroundTint="#146CD7"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20ssp"
-            app:srcCompat="@drawable/photo_1674291743828">
+            app:cardCornerRadius="@dimen/_30sdp"
+            >
 
-        </ImageView>
+            <ImageView
+                android:layout_width="@dimen/_185sdp"
+                android:layout_height="@dimen/_160sdp"
+                android:layout_gravity="center"
+
+                android:scaleType="centerInside"
+
+
+                app:srcCompat="@drawable/img_20230526_130845">
+
+            </ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+
 
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="وَقَالَ لَهُمُ:«اذْهَبُوا إِلَى الْعَالَمِ أَجْمَعَ وَاكْرِزُوا بِالإِنْجِيلِ لِلْخَلِيقَةِ كُلِّهَا.
-"
+            android:text="وَقَالَ لَهُمُ:"
+            android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="casual"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15ssp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20sdp"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_70sdp"
+
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="«اذْهَبُوا إِلَى الْعَالَمِ أَجْمَعَ وَاكْرِزُوا بِالإِنْجِيلِ لِلْخَلِيقَةِ كُلِّهَا.»"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+
             >
 
         </TextView>
@@ -46,9 +80,9 @@
             android:layout_height="wrap_content"
             android:text="(مرقس ١٦: ١٥) "
             android:textStyle="bold"
-            android:textSize="17dp"
+            android:textSize="@dimen/_18sdp"
             android:gravity="center"
-            android:textColor="#A13737"
+            android:textColor="#FFFFFF"
             >
 
         </TextView>

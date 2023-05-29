@@ -3,6 +3,39 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/drawable/back_shape.xml" value="0.1915" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/drawable/ic_baseline_event_24.xml" value="0.3455" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/drawable/ic_outline_contactless_24.xml" value="0.3455" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/drawable/shape.xml" value="0.1885" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_button.xml" value="0.18256410256410258" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_contact_us.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_events.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_fourth_programme.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_keraza.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_main_list.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_new.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_service.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_splash.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/activity_user_list.xml" value="0.16" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/dropdowm_menu.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_fifth_programme.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_first_programme.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_fourth_programme.xml" value="0.31875" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_more.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_second_programme.xml" value="0.2578125" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_sixth_programme.xml" value="0.31875" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_third_programme.xml" value="0.3435185185185185" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/fragment_videos.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/item2.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/item_news.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/main_item.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/layout/second_item.xml" value="0.3625" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/menu/list_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/menu/navigation_bar.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.167" />
+        <entry key="..\:/AndroidStudioProjects/Task 2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/MyApp3/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Task 2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.158" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Task 2/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.158" />
@@ -26,7 +59,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
@@ -35,7 +68,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.16" />
+        <option name="scale" value="0.1" />
       </ProjectState>
     </option>
   </component>

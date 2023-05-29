@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="spinnerItems">
-        <item>خدمة جيل  جدية</item>
+    <string-array name="spinnerItems"
+        translatable="true"
+        >
+        <item> جيل  جديد</item>
         <item>صفحة جديدة</item>
         <item>الكارز</item>
-        <item>item4</item>
+        <item>كاشف الأسرار</item>
+        <item>حياتك في قصة</item>
+        <item>اخر برنامج</item>
     </string-array>
+
 </resources>

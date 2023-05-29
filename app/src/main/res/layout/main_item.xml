@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_15ssp"
+    app:cardElevation="@dimen/_2ssp"
+    android:layout_margin="@dimen/_10ssp"
+
+    app:strokeColor="#1A55BC"
+    app:strokeWidth="@dimen/_1sdp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+
+        >
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_65sdp"
+    app:cardCornerRadius="@dimen/_15ssp"
+    app:cardElevation="@dimen/_2ssp"
+    android:layout_margin="@dimen/_7ssp"
+
+    app:strokeColor="#1A55BC"
+    app:strokeWidth="@dimen/_1sdp"
+    >
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/youtube_logo2"
+        android:scaleType="fitXY"
+
+
+        >
+
+    </ImageView>
+
+</com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="@dimen/_40sdp"
+    android:layout_height="@dimen/_16sdp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/_5ssp"
+    app:cardElevation="@dimen/_2ssp"
+
+    app:strokeColor="#1A55BC"
+    app:strokeWidth="@dimen/_1sdp"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:text="Title"
+        android:textColor="#980606"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold">
+
+    </TextView>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

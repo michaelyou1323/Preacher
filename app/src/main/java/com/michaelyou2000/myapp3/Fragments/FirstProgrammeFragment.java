@@ -1,6 +1,9 @@
 package com.michaelyou2000.myapp3.Fragments;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -8,53 +11,97 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.michaelyou2000.myapp3.Recyclerview.FProgrammeAdapter;
-import com.michaelyou2000.myapp3.Recyclerview.FirstProgrammeDataModel;
+import com.google.firebase.database.ValueEventListener;
+import com.michaelyou2000.myapp3.New.MyAdapter;
+import com.michaelyou2000.myapp3.New.User;
 import com.michaelyou2000.myapp3.R;
+
+import java.util.ArrayList;
 
 
 public class FirstProgrammeFragment extends Fragment {
-RecyclerView recyclerView;
-FProgrammeAdapter fProgrammeAdapter;
+    RecyclerView recyclerView;
+    DatabaseReference database;
+    MyAdapter myAdapter;
+    ArrayList<User> users;
+    private ArrayList<User> newsArrayList;
+    private RecyclerView recyclerview;
+
+
+
+    public FirstProgrammeFragment(){
+
+    }
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+
+
 
 
         }
 
 
+
+
+
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
-
-        View view = inflater.inflate(R.layout.fragment_first_programme, container,false);
-
-        recyclerView = (RecyclerView)view.findViewById(R.id.rvFProgramme);
+        View view = inflater.inflate(R.layout.fragment_first_programme, container, false);
 
 
 
 
-        FirebaseRecyclerOptions<FirstProgrammeDataModel> options =
-                new FirebaseRecyclerOptions.Builder<FirstProgrammeDataModel>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("New page"), FirstProgrammeDataModel.class)
-                        .build();
 
-
+        recyclerView = view.findViewById(R.id.userList);
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new GridLayoutManager(requireContext(),2));
 
-        fProgrammeAdapter = new FProgrammeAdapter(options);
-        recyclerView.setAdapter(fProgrammeAdapter);
+        database = FirebaseDatabase.getInstance().getReference("NewGen");
+
+        users = new ArrayList<>();
+        myAdapter = new MyAdapter(requireContext(),users);
+        myAdapter.setUsersList(users);
+        database.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    User user = dataSnapshot.getValue(User.class);
+                    users.add(user);
+                }
+                myAdapter.setUsersList(users);
+                myAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+
+
+        });
+
+
+
+
+        myAdapter = new MyAdapter(getActivity(), users);
+        recyclerView.setAdapter(myAdapter);
         return view;
+
+
+
     }
 
     @Override
@@ -62,17 +109,10 @@ FProgrammeAdapter fProgrammeAdapter;
         super.onViewCreated(view, savedInstanceState);
 
 
+
+
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        fProgrammeAdapter.startListening();
-    }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-        fProgrammeAdapter.stopListening();
-    }
+
 }

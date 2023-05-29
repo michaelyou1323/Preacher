@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".More.ContactUsActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    >
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_40sdp"
+        app:strokeColor="#146CD7"
+        app:strokeWidth="@dimen/_1sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_gravity="center"
+
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تواصل معنا"
+            android:textSize="@dimen/_19ssp"
+
+
+            android:gravity="center"
+            android:layout_gravity="center"
+
+            android:textColor="#146CD7"
+            >
+
+        </TextView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:weightSum="5"
+
+       >
+
+
+     <com.google.android.material.card.MaterialCardView
+         android:id="@+id/cardView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:layout_marginTop="@dimen/_15sdp"
+         app:cardCornerRadius="@dimen/_10sdp"
+         app:strokeWidth="@dimen/_1sdp"
+         app:strokeColor="#818181"
+         android:layout_gravity="center"
+         android:layout_weight="1"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_gravity="center">
+
+             <ImageView
+                 android:layout_marginTop="@dimen/_2sdp"
+                 android:layout_marginBottom="@dimen/_2sdp"
+                 android:layout_width="@dimen/_45sdp"
+                 android:layout_height="@dimen/_35sdp"
+                 android:src="@drawable/facebook_logo__2019_"
+                 >
+             </ImageView>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="خدمة جيل جديد New Generation Ministry"
+                 android:layout_gravity="center"
+                 android:textSize="@dimen/_13sdp"
+                 android:textStyle="bold"
+                 android:textColor="@color/black"
+
+                 >
+
+             </TextView>
+         </LinearLayout>
+     </com.google.android.material.card.MaterialCardView>
+
+
+       <com.google.android.material.card.MaterialCardView
+           android:id="@+id/cardView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:layout_marginTop="@dimen/_15sdp"
+           app:cardCornerRadius="@dimen/_10sdp"
+           app:strokeWidth="@dimen/_1sdp"
+           app:strokeColor="#818181"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_gravity="center">
+
+               <ImageView
+                   android:layout_marginTop="@dimen/_2sdp"
+                   android:layout_marginBottom="@dimen/_2sdp"
+                   android:layout_width="@dimen/_45sdp"
+                   android:layout_height="@dimen/_35sdp"
+                   android:src="@drawable/facebook_logo__2019_"
+                   >
+               </ImageView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="خدمة صفحة جديدة New Page Ministry"
+                   android:layout_gravity="center"
+                   android:textSize="@dimen/_13sdp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+                   android:layout_marginRight="@dimen/_20sdp"
+
+                   >
+
+               </TextView>
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+       <com.google.android.material.card.MaterialCardView
+           android:id="@+id/cardView3"
+           android:layout_width="@dimen/_275sdp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="@dimen/_10sdp"
+           android:layout_marginRight="@dimen/_10sdp"
+           android:layout_marginTop="@dimen/_15sdp"
+           app:cardCornerRadius="@dimen/_10sdp"
+           app:strokeWidth="@dimen/_1sdp"
+           app:strokeColor="#818181"
+           android:layout_gravity="center"
+           android:layout_weight="1"
+           android:layout_marginBottom="@dimen/_20sdp"
+           >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_gravity="center">
+
+               <ImageView
+                   android:layout_marginTop="@dimen/_2sdp"
+                   android:layout_marginBottom="@dimen/_2sdp"
+                   android:layout_width="@dimen/_45sdp"
+                   android:layout_height="@dimen/_35sdp"
+                   android:src="@drawable/photoroom_20230511_104049"
+
+                   >
+               </ImageView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text=""
+                   android:layout_gravity="center"
+                   android:textSize="@dimen/_13sdp"
+                   android:textStyle="bold"
+                   android:textColor="@color/black"
+
+                   >
+
+               </TextView>
+           </LinearLayout>
+       </com.google.android.material.card.MaterialCardView>
+
+<!--       <com.google.android.material.card.MaterialCardView-->
+<!--           android:id="@+id/cardView4"-->
+<!--           android:layout_width="@dimen/_295sdp"-->
+<!--           android:layout_height="wrap_content"-->
+<!--           android:layout_marginLeft="@dimen/_10sdp"-->
+<!--           android:layout_marginRight="@dimen/_10sdp"-->
+<!--           android:layout_marginTop="@dimen/_15sdp"-->
+<!--           app:cardCornerRadius="@dimen/_10sdp"-->
+<!--           app:strokeWidth="@dimen/_1sdp"-->
+<!--           app:strokeColor="#818181"-->
+<!--           android:layout_gravity="center"-->
+<!--           android:layout_weight="1"-->
+<!--           >-->
+
+<!--           <LinearLayout-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:orientation="horizontal"-->
+<!--               android:layout_gravity="center">-->
+
+<!--               <TextView-->
+<!--                   android:layout_width="wrap_content"-->
+<!--                   android:layout_height="wrap_content"-->
+<!--                   android:layout_gravity="center"-->
+<!--                   android:textSize="@dimen/_13sdp"-->
+<!--                   android:textStyle="bold"-->
+<!--                   android:textColor="@color/black"-->
+
+<!--                   >-->
+
+<!--               </TextView>-->
+<!--           </LinearLayout>-->
+<!--       </com.google.android.material.card.MaterialCardView>-->
+
+   </LinearLayout>
+
+</LinearLayout>
