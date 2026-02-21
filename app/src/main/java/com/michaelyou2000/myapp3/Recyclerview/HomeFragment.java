@@ -13,23 +13,13 @@ import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.cloudinary.android.MediaManager;
 import com.michaelyou2000.myapp3.More.EventsActivity;
 import com.michaelyou2000.myapp3.New.UserList;
 import com.michaelyou2000.myapp3.R;
 
 
 public class HomeFragment extends Fragment {
-
-
-
-    DatabaseReference database;
-
-
 
 
     public HomeFragment() {
@@ -84,41 +74,9 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        FirebaseDatabase firebaseDatabase
-                = FirebaseDatabase.getInstance();
-
-        database = FirebaseDatabase.getInstance().getReference("Events");
-
-        database.addListenerForSingleValueEvent(
-                new ValueEventListener() {
-                    @Override
-                    public void onDataChange(
-                            @NonNull DataSnapshot dataSnapshot)
-                    {
-                        for (DataSnapshot ds : dataSnapshot.getChildren()){
-                            String imageUrl = ds.child("imageUrl").getValue(String.class);
-                                    String link = ds.child("link").getValue(String.class);
-
-                           // Picasso.get().load(imageUrl).into(rImage);
-
-
-                            Glide.with(rootView)
-                                    .load(imageUrl).into(rImage);
-                        }
-
-
-
-                    }
-
-                    @Override
-                    public void onCancelled(@androidx.annotation.NonNull DatabaseError error) {
-
-                    }
-
-
-                });
-
-
+        // TODO: Replace "sample" with the public ID of your image in Cloudinary
+        String imageUrl = MediaManager.get().url().generate("sample");
+        Glide.with(rootView).load(imageUrl).into(rImage);
 
 
 
@@ -151,8 +109,3 @@ public class HomeFragment extends Fragment {
 
 
 }
-
-
-
-
-
