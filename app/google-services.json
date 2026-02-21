@@ -1,37 +1,26 @@
 {
   "project_info": {
-    "project_number": "983090690799",
-    "firebase_url": "https://preacher-41c11-default-rtdb.firebaseio.com",
-    "project_id": "preacher-41c11",
-    "storage_bucket": "preacher-41c11.appspot.com"
+    "project_number": "552046918088",
+    "project_id": "preacherapp-e6a00",
+    "storage_bucket": "preacherapp-e6a00.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:983090690799:android:fcff4e87c3a92ac30d391a",
+        "mobilesdk_app_id": "1:552046918088:android:cd04975a20204b9a96a8fd",
         "android_client_info": {
-          "package_name": "com.michaelyou2000.myapp3"
+          "package_name": "com.preacher.app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "983090690799-oslbjlj68o328gmkudsbg5tlui7d9h12.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBU4CHkLNCwFiQMqP1d_4tfgf3WcGjk-dY"
+          "current_key": "AIzaSyCp8xnOKpKv4D_CN7-DYjE9_L1M3mATPA0"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "983090690799-oslbjlj68o328gmkudsbg5tlui7d9h12.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

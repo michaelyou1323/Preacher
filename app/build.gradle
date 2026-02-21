@@ -8,7 +8,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.michaelyou2000.myapp3"
+        applicationId "com.preacher.app"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -32,7 +32,7 @@ android {
         viewBinding true
         dataBinding true
     }
-    namespace 'com.michaelyou2000.myapp3'
+    namespace 'com.preacher.app'
 }
 
 dependencies {

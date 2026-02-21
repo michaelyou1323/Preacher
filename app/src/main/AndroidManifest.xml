@@ -17,38 +17,38 @@
         tools:targetApi="31">
         
         <activity
-            android:name="com.michaelyou2000.myapp3.More.ContactUsActivity"
+            android:name="com.preacher.app.More.ContactUsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.michaelyou2000.myapp3.More.KerazaActivity"
+            android:name="com.preacher.app.More.KerazaActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.michaelyou2000.myapp3.More.EventsActivity"
+            android:name="com.preacher.app.More.EventsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.michaelyou2000.myapp3.More.Service"
+            android:name="com.preacher.app.More.Service"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.michaelyou2000.myapp3.New.UserList"
+            android:name="com.preacher.app.New.UserList"
             android:exported="false"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name="com.michaelyou2000.myapp3.HomeActivity"
+            android:name="com.preacher.app.HomeActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             />
 
         <activity
-            android:name="com.michaelyou2000.myapp3.SplashMenu.SplashActivity"
+            android:name="com.preacher.app.SplashMenu.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             >

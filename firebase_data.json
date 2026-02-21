@@ -1,0 +1,60 @@
+{
+  "Events": {
+    "event1": {
+      "imageUrl": "https://i.postimg.cc/k4pC5Q6g/Whats-App-Image-2023-05-18-at-2-12-11-AM.jpg",
+      "link": "https://www.facebook.com/StABchurch/"
+    },
+    "event2": {
+      "imageUrl": "https://i.postimg.cc/k4pC5Q6g/Whats-App-Image-2023-05-18-at-2-12-11-AM.jpg",
+      "link": "https://www.facebook.com/StABchurch/"
+    }
+  },
+  "NewGen": {
+    "program1": {
+      "name": "Program Name 1",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    },
+    "program2": {
+      "name": "Program Name 2",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    }
+  },
+  "NewPage": {
+    "program1": {
+      "name": "Program Name 1",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    },
+    "program2": {
+      "name": "Program Name 2",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    }
+  },
+  "Karez": {
+    "program1": {
+      "name": "Program Name 1",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    },
+    "program2": {
+      "name": "Program Name 2",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    }
+  },
+  "SecretsDetector": {
+    "program1": {
+      "name": "Program Name 1",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    },
+    "program2": {
+      "name": "Program Name 2",
+      "link": "https://your-program-url.com",
+      "image": "https://your-image-url.com"
+    }
+  }
+}
